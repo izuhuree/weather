@@ -22,12 +22,10 @@ if __name__ == "__main__":
 
     # Check for empty strings or string with only spaces
     # This step is not required here
-    # if not bool(city.strip()):
-    #     city = "Male"
+    if not bool(city.strip()):
+        city = "Male"
 
     weather_data = get_current_weather(city)
 
     print("\n")
     pprint(weather_data)
-
-
